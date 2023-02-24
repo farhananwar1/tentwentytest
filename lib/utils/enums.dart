@@ -1,0 +1,1 @@
+enum MainScreenModules { dashboard, watch, mediaLibrary, more }
