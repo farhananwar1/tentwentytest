@@ -21,7 +21,7 @@ class CommonTextField extends StatelessWidget {
         this.validator,
         this.inputFormatters,
         this.contentPadding,
-        this.height})
+        this.height,this.controller})
       : super(key: key);
   final String hintText;
   final Widget? prefix;
@@ -37,6 +37,7 @@ class CommonTextField extends StatelessWidget {
   final List<TextInputFormatter>? inputFormatters;
   final EdgeInsets? contentPadding;
   final double? height;
+ final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +50,7 @@ class CommonTextField extends StatelessWidget {
       child: SizedBox(
         height: height ?? 60,
         child: TextFormField(
+          controller: controller,
           initialValue: initialValue,
           onChanged: onChanged,
           textAlign: textAlign ?? TextAlign.center,

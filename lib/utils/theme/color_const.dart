@@ -14,5 +14,6 @@ class MyColors {
   static Color genreBgColor3 = Color(0xff564CA3);
   static Color genreBgColor4 = Color(0xffCD9D0F);
   static Color overviewTextColor = Color(0xff8F8F8F);
+  static Color dateCardBgColor = Color(0xffA6A6A6);
 
 }

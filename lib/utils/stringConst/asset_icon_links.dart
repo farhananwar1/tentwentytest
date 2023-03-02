@@ -8,4 +8,5 @@ class AssetIconLinks {
   static String SEARCH_ICON = "assets/icons/search.png";
   static String CLOSE_ICON = "assets/icons/close.png";
   static String BACK_ICON = "assets/icons/back.png";
+  static String SEAT_ICON = "assets/icons/seats.png";
 }

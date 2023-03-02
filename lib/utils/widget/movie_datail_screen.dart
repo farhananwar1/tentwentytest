@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import 'package:tentwenty_test/module/mainScreen/modules/getTickets/view/screen/get_ticket_screen.dart';
 import 'package:tentwenty_test/utils/stringConst/asset_icon_links.dart';
 import 'package:tentwenty_test/utils/widget/common_genre_button.dart';
 
@@ -114,7 +115,16 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                         ),
                         CommonActionButton(
                           text: 'Get Tickets',
-                          onTap: () {},
+                          showBackgroundColor: true,
+                          bgColor: MyColors.buttonColor,
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => GetTicketScreen(
+                                        title: widget.title,
+                                        releaseDate: widget.releaseDate)));
+                          },
                         ),
                         SizedBox(
                           height: 10.h,
